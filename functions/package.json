@@ -1,6 +1,7 @@
 {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
+  "name": "Weather assistant",
+  "description": "A sample Google Assistant app that tells you the weather for a given location",
+  "author":"Anthony Broad-Crawford",
   "scripts": {
     "serve": "firebase serve --only functions",
     "shell": "firebase experimental:functions:shell",
@@ -9,6 +10,7 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
+    "actions-on-google": "^1.0.0",
     "firebase-admin": "~5.4.2",
     "firebase-functions": "^0.7.1"
   },
