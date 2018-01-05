@@ -40,6 +40,7 @@ exports.WeatherAssistant = firebase.https.onRequest((request, response) => {
 
   //routing
   let router = new Map();
-
   router.set(WEATHER_ACTION, identify_weather);
+  
+  app.handleRequest(router);
 });
