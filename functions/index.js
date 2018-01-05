@@ -5,7 +5,7 @@ const firebase = require('firebase-functions');
 const http = require('http');
 
 //constants
-const WEATHER_ACTION = 'identify_weather';
+const WEATHER_ACTION = 'city_forecast';
 const LOCATION_ARGUMENT = 'geo-city';
 const DAY_ARGUMENT = 'date'
 const WEATHER_API_KEY = 'e20f019fe3f44b8daf9212730172712';
@@ -19,7 +19,7 @@ exports.WeatherAssistant = firebase.https.onRequest((request, response) => {
   console.log('Request body: '+ JSON.stringify(response.body));
 
   //end-point that takes the user input from Google assistant and returns the weather
-  function identifyWeather(app){
+  function cityForecast(app){
 
     let location = 'Chicago';
     let day = 'today';
@@ -41,6 +41,6 @@ exports.WeatherAssistant = firebase.https.onRequest((request, response) => {
   //routing
   let router = new Map();
   router.set(WEATHER_ACTION, identify_weather);
-  
+
   app.handleRequest(router);
 });
