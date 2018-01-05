@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "weather-assistant-767b8"
+    "default": "weather-assistant-767b8",
+    "forecast": "weather-forecast-826eb"
   }
 }

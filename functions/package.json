@@ -1,7 +1,8 @@
 {
-  "name": "Weather assistant",
+  "name": "weather-assistant",
   "description": "A sample Google Assistant app that tells you the weather for a given location",
-  "author":"Anthony Broad-Crawford",
+  "author": "Anthony Broad-Crawford",
+  "version": "0.0.1",
   "scripts": {
     "serve": "firebase serve --only functions",
     "shell": "firebase experimental:functions:shell",
